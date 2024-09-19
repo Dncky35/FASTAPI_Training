@@ -1,0 +1,11 @@
+*, *::before, *::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: grey;
+    color: beige;
+    text-align: center;
+}
