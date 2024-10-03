@@ -29,4 +29,4 @@ app.include_router(vote.router)
 
 @app.get("/", response_class=HTMLResponse)
 async def root(request: Request):
-    return templates.TemplateResponse("home.html", {"request":request, "message":message})
+    return templates.TemplateResponse("home.html", {"root_path": request.scope.get("root_path"), "request":request, "message":message})
